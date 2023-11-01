@@ -1,0 +1,11 @@
+pesahombre,50
+pesamujer,30
+bicicleta,5
+balonfutbol,100
+balonbaloncesto,100
+camisetafutbol,80
+camisetabaloncesto,50
+caminadora,3
+raqueta,20
+palogolf,10
+toalla,18toalla,18
