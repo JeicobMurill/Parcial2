@@ -1,0 +1,4 @@
+Toalla,10000.0,30
+Escobas,8000.0,80
+Traperos,9000.0,75
+Jabon,4500.0,60
