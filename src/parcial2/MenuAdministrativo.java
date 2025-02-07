@@ -35,23 +35,12 @@ public class MenuAdministrativo {
 
       
         switch (opcion) {
-            case "1. Listar productos":
-                listarProductos();  // Llama al método para listar productos
-                break;
-            case "2. Agregar producto":
-                agregarProducto();  // Llama al método para agregar un nuevo producto
-                break;
-            case "3. Modificar producto":
-                modificarProducto();  // Llama al método para modificar un producto existente
-                break;
-            case "4. Salir":
-                System.exit(0);  // Cierra el programa si el usuario selecciona salir
-                break;
-            default:
-              
-                JOptionPane.showMessageDialog(null, "Opción no válida.");
-                break;
-        }
+            case "1. Listar productos" -> listarProductos();  
+            case "2. Agregar producto" -> agregarProducto();  
+            case "3. Modificar producto" -> modificarProducto();  
+            case "4. Salir" -> System.exit(0);  
+            default -> JOptionPane.showMessageDialog(null, "Opción no válida.");
+}
     }
 
     

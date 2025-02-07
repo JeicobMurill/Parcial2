@@ -10,8 +10,8 @@ package parcial2;
 public class Administrador {
     
     // Credenciales predefinidas de un usuario administrador.
-    private String nombreUsuario = "admin";
-    private String contrasena = "1234";
+    private final String nombreUsuario = "admin";
+    private final String contrasena = "1234";
 
     
     public boolean autenticar(String usuario, String contrasena) {

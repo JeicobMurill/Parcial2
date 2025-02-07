@@ -7,6 +7,7 @@
 package parcial2;
 
 import java.io.*;
+import javax.swing.*;
 import java.util.*;
 
 public class DatabaseText {
@@ -22,7 +23,7 @@ public class DatabaseText {
             try {
                 archivo.createNewFile();  
             } catch (IOException e) {
-                e.printStackTrace(); 
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
@@ -36,7 +37,8 @@ public class DatabaseText {
             writer.write(linea);
             writer.newLine();
         } catch (IOException e) {
-            e.printStackTrace(); 
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+
         }
     }
 
@@ -59,7 +61,7 @@ public class DatabaseText {
                 productos.add(new Producto(nombre, precio, cantidad));
             }
         } catch (IOException e) {
-            e.printStackTrace();  
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
         return productos;
     }
@@ -77,7 +79,7 @@ public class DatabaseText {
                 writer.newLine();
             }
         } catch (IOException e) {
-            e.printStackTrace(); 
+            JOptionPane.showMessageDialog(null, "Error: " + e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 }
